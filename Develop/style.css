@@ -1,0 +1,32 @@
+
+#box {
+    background-color: silver;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+    padding: 50px;
+    margin-top: 50px;
+}
+#card {
+    background-color: cornflowerblue;
+    margin:auto;
+    width: 50%;
+    height: 250px;
+    padding:50px;
+    text-align: center;
+}
+#card h1{
+    vertical-align:middle;
+}
+
+#rectangle {
+    background-color: silver;
+    width: 50%;
+    margin: auto;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
