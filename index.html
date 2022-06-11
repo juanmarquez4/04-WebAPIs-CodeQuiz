@@ -5,26 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web APIs Code Quiz</title>
-    <link rel="stylesheet" href="Develop/reset.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="Develop/reset.css"/> -->
     <link rel="stylesheet" href="Develop/style.css"/>
+    
 </head>
 
 <body>
-    <div id="box">
-        <button>View Highscores</button>
-        <p id="counter">123</p> 
-    </div>
-    <div id="card">
-        <h1>Coding Quiz Challenge</h1>
-        <h1>Instrucion</h1>
-    </div>
-    <div id="rectangle">
-        <button id="startQuiz">Start Quiz</button>
-    </div>
+    
+        <div id="box">
+            <button class="btn btn-primary">View Highscores</button>
+            <p id="counter">Time: 0</p> 
+        </div>
 
-   
+        <div id="card" style="display:block">
+            <div class="fs-3">Coding Quiz Challenge</div>
+            <div class="fs-5">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your scoretime by ten seconds!</div>
+        </div>
 
+        <div id="cardQuestion" style="display:none">
+            <div id="title"></div>
+            <div class="d-grid gap-2">
+                <button id="btn0" class="btn btn-primary alternatives" type="submit"></button>
+                <button id="btn1" class="btn btn-primary alternatives" type="submit"></button>
+                <button id="btn2" class="btn btn-primary alternatives" type="submit"></button>
+                <button id="btn3" class="btn btn-primary alternatives" type="submit"></button>
+            </div>
+        </div>
 
+        <div id="rectangle">
+            <button id="startQuiz" class="btn btn-primary" onclick="swapDivsWithClick()">Start Quiz</button>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="Develop/script.js"></script>
 </body>
 </html>
