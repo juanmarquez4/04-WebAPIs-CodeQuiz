@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web APIs Code Quiz</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="Develop/reset.css"/> -->
+    <!-- <link rel="stylesheet" href="Develop/reset.css"/>  not necesary atm -->
     <link rel="stylesheet" href="Develop/style.css"/>
     
 </head>
@@ -15,7 +15,7 @@
     
         <div id="box">
             <button class="btn btn-primary">View Highscores</button>
-            <p id="counter">Time: 0</p> 
+            <button id="counter" class="btn btn-primary">Time: 0</button> 
         </div>
 
         <div id="card" style="display:block">
@@ -30,6 +30,15 @@
                 <button id="btn1" class="btn btn-primary alternatives" type="submit"></button>
                 <button id="btn2" class="btn btn-primary alternatives" type="submit"></button>
                 <button id="btn3" class="btn btn-primary alternatives" type="submit"></button>
+            </div>
+        </div>
+
+        <div id="cardAllDone" style="display:none">
+            <div id="allDone" class="fs-3">All done!</div>
+            <div id="finalScore" class="fs-5"></div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Enter initials:" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-primary" type="button" id="button-addon2">Submit</button>
             </div>
         </div>
 

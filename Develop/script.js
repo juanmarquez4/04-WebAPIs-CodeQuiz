@@ -1,4 +1,4 @@
-// declared variables
+// declared global variables
 var timeEl = document.getElementById("counter");
 var startButton = document.getElementById("startQuiz");
 var question1 =  
@@ -7,33 +7,33 @@ var question1 =
         alternatives: ["1.strings", "2.booleans", "3.alerts", "4.numbers"],
         correctAnswer: "1.strings",
     };
-var question2 =
-    {
-        title: "The condition in an if / else statement is enclosed within ____.",
-        alternatives: ["1.quotes", "2.curly brackets", "3.parenthesis", "4.square brackets"],
-        correctAnswer: "3.parenthesis"
-    };
-var question3 =
-    {
-        title: "Arrays in JavaScript can be used to store ____",
-        alternatives: ["1.numbers and strings", "2.other arrays", "3.booleans", "4.all of the above"],
-        correctAnswer: "4.all of the above"
-    };
-var question4 =
-    {
-        title: "String Values must be enclosed within ____ when being assigned to variables.",
-        alternatives: ["1.commas", "2.curly brackets", "3.quotes", "4.parenthesis"],
-        correctAnswer: "3.quotes"
-    };
-var question5 =
-    {
-        title: "A very useful tool used during development and debugging for printing content to the debuger is:",
-        alternatives: ["1.JavaScript", "2.terminal / bash", "3.for loops", "4.console.log"],
-        correctAnswer: "4.console.log"
-    };
 
+// TODOs --> replace in showQuestion() question1 for subsequent question.
+// var question2 =
+//     {
+//         title: "The condition in an if / else statement is enclosed within ____.",
+//         alternatives: ["1.quotes", "2.curly brackets", "3.parenthesis", "4.square brackets"],
+//         correctAnswer: "3.parenthesis"
+//     };
+// var question3 =
+//     {
+//         title: "Arrays in JavaScript can be used to store ____",
+//         alternatives: ["1.numbers and strings", "2.other arrays", "3.booleans", "4.all of the above"],
+//         correctAnswer: "4.all of the above"
+//     };
+// var question4 =
+//     {
+//         title: "String Values must be enclosed within ____ when being assigned to variables.",
+//         alternatives: ["1.commas", "2.curly brackets", "3.quotes", "4.parenthesis"],
+//         correctAnswer: "3.quotes"
+//     };
+// var question5 =
+//     {
+//         title: "A very useful tool used during development and debugging for printing content to the debuger is:",
+//         alternatives: ["1.JavaScript", "2.terminal / bash", "3.for loops", "4.console.log"],
+//         correctAnswer: "4.console.log"
+//     };
 
-        
 
 // start quiz button
 
@@ -42,7 +42,7 @@ startButton.addEventListener("click", startGame);
 
 // timer function
 function startGame() {
-    var secondsLeft = 75;
+    var secondsLeft = 7;
     
     var timerInterval = setInterval(function(){
         secondsLeft--;
@@ -109,14 +109,21 @@ for (let i=0; i<alternativesDiv.length;i++){
 showQuestion(question1);
 
 
-// run this function when timer gets to 0 seconds
+// run this function when timer gets to 0 seconds --->TODO: //when all questions are answered.
 function allDone(){
-
+    var d1 = document.getElementById("cardQuestion");
+    var d2 = document.getElementById("cardAllDone");
+   if (d1.style.display == "block") {
+      d1.style.display = "none";
+      d2.style.display = "block";
+   } 
+//    var finalScore = document.getElementById("finalScore");
+//    finalScore.textContent = secondsLeft //it does not work as seconds left is a local variable in startGame()
 };
 
-//if answer is wrong, time is taken off the timer
 
-//when all questions are answered, or timer gets to 0, then game is over.
+// TODOs:
+//if answer is wrong, time is taken off the timer
 
 //function highscore
 
@@ -124,46 +131,3 @@ function allDone(){
 
 
 
-
-    // alts.forEach(function(element, index){
-    //     element.textContent = q.alternatives[index]; 
-
-
-    // console.log(alternativesDiv);
-    // var e = document.getElementById("btn0");
-    // console.log(e.textContent)
-    // if(e.textContent == q.correctAnswer){
-    //     console.log("Right Answer")
-    // }else{
-    //     console.log("Wrong Answer")
-    // };
-    
- 
-
-    
-    
-    // var buttons = document.querySelectorAll(".alternatives");
-    // console.log(buttons);
-    
-    // buttons.addEventListener("click", function(event){
-    //    buttons = event.target.innerHTML;
-
-
-    // })
-
-    // .addEventListener("click", function(event){
-    //     var rightanswer = event.target.textContent;
-    //     console.log(rightanswer)
-
-    //     // if(q.correctAnswer == q.alternatives[i]){
-    //     //     console.log("correct answer")
-    //     // }
-    //     // else{
-    //     //     console.log("Wrong answer")
-    //     // }
-    // })
-
-    // else {
-//       d1.style.display = "block";
-//       d2.style.display = "none";
-//    }

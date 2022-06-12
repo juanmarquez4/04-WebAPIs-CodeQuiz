@@ -25,6 +25,14 @@
     padding:50px;
     text-align: center;
 }
+#cardAllDone {
+    background-color: cornflowerblue;
+    margin:auto;
+    width: 50%;
+    height: auto;
+    padding:50px;
+    text-align: center;
+}
 #card h1{
     vertical-align:middle;
 }
