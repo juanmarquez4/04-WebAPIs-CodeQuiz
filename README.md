@@ -1,4 +1,24 @@
-# 04 Web APIs: Code Quiz
+Code Quiz
+
+Description: -This week's Challenge is the development of a quiz using html, CSS and Javascript. 
+
+In this Challenge I am to build a timed coding quiz with multiple-choice questions. 
+This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. 
+It will have a clean, polished, and responsive user interface. 
+
+Review: -required to submit: -The URL of the deployed application -The Url of the GitHub repository, with a unique name and a README that describes the project:
+
+Here you can find the links for the Password Generator:
+
+-https://github.com/juanmarquez4/04-WebAPIs-CodeQuiz -https://juanmarquez4.github.io/04-WebAPIs-CodeQuiz/
+
+<img width="1792" alt="Screen Shot 2022-06-12 at 6 16 59 pm" src="https://user-images.githubusercontent.com/67566810/173224004-9f1cf802-19cd-4858-9b5c-985aab21c65a.png">
+![Screen Shot 2022-06-12 at 6 16 59 pm 2](https://user-images.githubusercontent.com/67566810/173224007-c23bec59-5b92-4eb7-93aa-c0d73271f363.png)
+
+
+Juan
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Your Task
 
